@@ -3,9 +3,9 @@ package com.rulesback.rulesback;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-// @EnableJpaRepositories(basePackages = {"com.rulesback.rulesback.repository"})
 @ComponentScan(basePackages = {"com.rulesback.rulesback"})
 public class RulesBackApplication {
 
