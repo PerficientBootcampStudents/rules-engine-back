@@ -27,5 +27,16 @@ public class TableController implements DBdataAPI{
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public String getHello() {
+        return "Hello";
+    }
+
+    @Override
+    public String getTypes() {
+        
+        return "Types";
+    }
+
 
 }

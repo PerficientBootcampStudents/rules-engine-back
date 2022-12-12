@@ -11,4 +11,9 @@ public interface DBdataAPI {
     @GetMapping("/dbdata")
     List<TupleDTO> getDBdata();
 
+    @GetMapping("/")
+    String getHello();
+
+    @GetMapping("/types")
+    String getTypes();
 }
