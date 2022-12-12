@@ -18,5 +18,5 @@ public interface DBdataAPI {
     String getHello();
 
     @GetMapping("/types")
-    String getTypes();
+    List<String> getTypes();
 }

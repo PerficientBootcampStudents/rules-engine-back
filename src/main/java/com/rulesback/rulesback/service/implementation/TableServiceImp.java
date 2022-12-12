@@ -19,8 +19,12 @@ public class TableServiceImp implements TableService{
     private TupleRepository tupleRepository;
 
     public List<String> getObjects(){
-        return (List<String>) tupleRepository.findData();
+        return tupleRepository.findData();
     } 
+
+    public List<String> getTuplesDataType(){
+        return tupleRepository.getDataTypes();
+    }
 
     @Override
     public List<Tuple> getTuples() {

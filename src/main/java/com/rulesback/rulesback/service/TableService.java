@@ -9,4 +9,6 @@ public interface TableService {
         
         List<String> getObjects();
         List<Tuple> getTuples();
+        List<String> getTuplesDataType();
+        
 }

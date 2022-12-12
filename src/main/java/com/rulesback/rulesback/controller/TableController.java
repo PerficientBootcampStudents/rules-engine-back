@@ -38,9 +38,8 @@ public class TableController implements DBdataAPI{
     }
 
     @Override
-    public String getTypes() {
-        
-        return "Types";
+    public List<String> getTypes() {
+        return tableService.getTuplesDataType();
     }
 
 
