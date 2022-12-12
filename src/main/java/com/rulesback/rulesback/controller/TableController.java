@@ -34,7 +34,7 @@ public class TableController implements DBdataAPI{
 
     @Override
     public String getTypes() {
-        
+        System.err.println("Types");
         return "Types";
     }
 
