@@ -11,7 +11,8 @@ import com.rulesback.rulesback.model.Tuple;
 
 public interface TupleRepository extends CrudRepository<Tuple, UUID> {
 
-    
+    @Query(value = "SELECT column_name, data_type FROM INFORMATION_SCHEMA.COLUMNS  WHERE TABLE_NAME = 'bdata' order by ordinal_position", nativeQuery = true)
+    List<String> getDataTypes();
     @Query(value = "Select * from bdata", nativeQuery = true)
     List<String> findData();
 }

@@ -21,6 +21,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Tuple {
+        
         @Id
         @Type(type = "uuid-char")
         private UUID id;
