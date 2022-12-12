@@ -28,6 +28,11 @@ public class TableController implements DBdataAPI{
     }
 
     @Override
+    public List<String> getObjects(){
+        return tableService.getObjects();
+    }
+
+    @Override
     public String getHello() {
         return "Hello";
     }

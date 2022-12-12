@@ -18,10 +18,13 @@ import lombok.AllArgsConstructor;
 public class TableServiceImp implements TableService{
     private TupleRepository tupleRepository;
 
+    public List<String> getObjects(){
+        return (List<String>) tupleRepository.findData();
+    } 
+
     @Override
     public List<Tuple> getTuples() {
-        return StreamSupport.stream(tupleRepository.findAll().spliterator(), false)
-                .collect(Collectors.toList());
+        return StreamSupport.stream(tupleRepository.findAll().spliterator(), false).collect(Collectors.toList());
     }
     
     
