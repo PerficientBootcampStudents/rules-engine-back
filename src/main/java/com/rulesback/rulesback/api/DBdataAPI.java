@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 public interface DBdataAPI {
     
@@ -20,4 +23,7 @@ public interface DBdataAPI {
 
     @GetMapping("/types")
     List<String> getTypes();
+
+    @PostMapping("/string")
+    public String string(@RequestBody String string);
 }

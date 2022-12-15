@@ -43,5 +43,11 @@ public class TableController implements DBdataAPI{
         return tableService.getTuplesDataType();
     }
 
+    @Override
+    public String string(String string) {
+
+        return string;
+    }
+
 
 }
