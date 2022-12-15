@@ -10,6 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class RulesBackApplication {
 
     public static void main(String[] args) {
+        System.out.println("Hello World!");
         SpringApplication.run(RulesBackApplication.class, args);
     }
 
